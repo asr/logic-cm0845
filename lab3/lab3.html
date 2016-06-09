@@ -57,8 +57,32 @@
     <ul style="text-align: left;">
       <li>
         (35%) Write a Haskell or Prolog program which finds the MGU (if exists)
-        of a set of atoms in FOL. In case the MGU does not
+        of two atoms in FOL. In case the MGU does not
         exists, the program must report it.
+
+      <ul>
+        <li>
+          <p> Haskell: The module <tt>FOL</tt> defines a data type for
+          the atoms in FOL. This module can be found in the
+           <a href="https://github.com/">GitHub</a>  repository <a href=
+        "https://github.com/asr/logic-cm0845/tree/master/lab2">logic-cm0845-
+        lab2</a>.
+          </p>
+
+          Using the module <tt>FOL</tt>, define a function
+          <pre>
+            <tt>unify :: Atom -> Atom -> [Atom]</tt>
+          </pre>
+          that returns a list with the atoms obtained after performing the
+          substitution expressed by the MGU of the two given atoms in FOL.
+        </li>
+
+        <li>
+          Prolog: write a Prolog predicate <tt>unify(A1,A2,B)</tt> where
+          <tt>B</tt> is a list withe the atoms obtained after performing the
+          substitution expressed by the MGU of <tt>A1</tt> and <tt>A2</tt>.
+        </li>
+      </ul>
       </li>
 
       <li>(35%) Oral exposition. Answers and explanations given in the
